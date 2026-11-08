@@ -5,7 +5,7 @@ let nub = 0;
 
 export function door() {
     let rend = Math.random() * 100;
-    for (let i = 0; i < rend; i++) {
+    for (let i = 0; i < rend+10; i++) {
         let rend1 = Math.random() * 200;
         let rend2 = Math.random() * 200;
         let dor = new ljs.EngineObject(ljs.vec2(rend1, rend2), ljs.vec2(1, 3));

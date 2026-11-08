@@ -1,7 +1,7 @@
-import * as ljs from "./node_modules/littlejsengine/dist/littlejs.esm.js";
 import * as wal from "./wal.js";
 import *as su from "./suuuw.js";
-let spd_aft;
+import * as ops from"./ops.js"
+export let lives=10;
 export function real_game(player,a) {
     player.pos.x = 0;
     player.pos.y = 0;
@@ -11,4 +11,5 @@ export function real_game(player,a) {
     wal.wlls();
     su.door();
     su.ifdoor(player);
+    ops.ops();
 }
